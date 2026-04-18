@@ -86,3 +86,55 @@ Step 5: Add Environment Variables (Optional)
 OPENAI_API_KEY=your_key
 
 Step 6: Deploy 🚀
+
+
+
+------------------------------------------Frontend------------------------
+
+FRONTEND (React + Tailwind + Recharts)
+
+This frontend will:
+
+Upload CSV 
+Ask questions 
+Show results 
+
+
+Frontend Folder Structure
+frontend/
+│
+├── src/
+│   ├── components/
+│   │   ├── Upload.jsx
+│   │   ├── Chat.jsx
+│   │   ├── ChartView.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│
+├── package.json
+├── index.html
+
+
+1. Setup React Project
+
+Use Vite (fastest way)
+
+npm create vite@latest frontend
+cd frontend
+npm install
+
+
+Install dependencies
+npm install axios recharts
+
+
+CONNECT BACKEND + FRONTEND
+
+first Make sure: Backend running on:
+http://127.0.0.1:8000
+
+and Frontend:
+npm run dev
+
+
